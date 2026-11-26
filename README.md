@@ -14,6 +14,10 @@ Pair the micro:bit over USB and choose **Show data Device** to see the device ID
 ambient light in lux, and gain-normalized proximity counts. Move a hand toward
 the sensor to test proximity, or shade it to test ambient light.
 
+For the tested Python example, download the [MakeCode Python proximity project](https://github.com/rlangoy/APDS9930/raw/refs/heads/master/APDS9930-python-proximity.hex)
+and open it with **Import → Import File**. In **Show data Device**, watch `x`
+as you move your hand toward and away from the sensor.
+
 The test uses the external I²C bus (P19 SCL, P20 SDA), 3V and GND.
 The APDS-9930 uses bus address `0x39`. Its ID register also returns `0x39`
 (57 in MakeCode). Use the **device ID** block to read it.
