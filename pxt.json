@@ -8,11 +8,10 @@
     },
     "files": [
         "README.md",
-        "main.ts"
+        "apds9930.ts"
     ],
     "testFiles": [
-        "test1.ts",
-        "test2.ts"
+        "main.ts"
     ],
     "public": true
 }

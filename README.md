@@ -8,11 +8,15 @@ Date:   2018.Apr
 
 ## Usage
 
-open your microbit makecode project, in Add Package, paste  
+To open the hardware diagnostic, go to [MakeCode for micro:bit](https://makecode.microbit.org/),
+choose **Import → Import File**, and select `APDS9930-diagnostic.hex`.
+Pair the micro:bit over USB and choose **Show data Device** to see the device ID,
+ambient light in lux, and gain-normalized proximity counts. Move a hand toward
+the sensor to test proximity, or shade it to test ambient light.
 
-https://github.com/microbit-makecode-packages/APDS9930  
-
-to search box then search.
+The test uses the external I²C bus (P19 SCL, P20 SDA), 3V and GND.
+The APDS-9930 uses bus address `0x39`. Its ID register also returns `0x39`
+(57 in MakeCode). Use the **device ID** block to read it.
 
 
 
